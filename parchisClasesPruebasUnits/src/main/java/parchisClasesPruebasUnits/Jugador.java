@@ -11,6 +11,8 @@ public class Jugador {
 	private String nombre;
 	private Tablero tablero;
 	
+	private Ficha ficha;
+	
 	public Jugador(String nombre, Tablero tablero) {
 		
 		this.nombre = nombre;
@@ -53,8 +55,7 @@ public class Jugador {
 	
 	public void moverFicha(int cs) {
 		
-		int origen = consultarTablero();
-		tablero.cambiarFicha(origen, origen+cs);;
+		ficha.mover(cs);
 		
 	}
 	
