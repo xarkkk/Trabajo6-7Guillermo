@@ -9,7 +9,7 @@ package parchisClasesPruebasUnits;
 public class Tablero {
 
 	private int numCasillas;
-	boolean[] casillas;
+	private int[] casillas;
 	
 	/**
 	 * 
@@ -17,7 +17,7 @@ public class Tablero {
 	public Tablero() {
 		
 		numCasillas = 21;
-		casillas = new boolean[numCasillas];
+		casillas = new int[numCasillas];
 		casillas[0] = true;
 		
 	}
@@ -28,7 +28,7 @@ public class Tablero {
 	public Tablero(int numCasillas) {	
 		
 		this.numCasillas = numCasillas;
-		casillas = new boolean[numCasillas+1];
+		casillas = new int[numCasillas+1];
 		casillas[0] = true;
 		
 	}
