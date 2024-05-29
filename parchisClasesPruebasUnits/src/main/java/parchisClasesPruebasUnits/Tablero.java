@@ -18,7 +18,7 @@ public class Tablero {
 		
 		numCasillas = 21;
 		casillas = new int[numCasillas];
-		casillas[0] = true;
+		casillas[0] = 1;
 		
 	}
 	
@@ -29,14 +29,14 @@ public class Tablero {
 		
 		this.numCasillas = numCasillas;
 		casillas = new int[numCasillas+1];
-		casillas[0] = true;
+		casillas[0] = 1;
 		
 	}
 	
 	public void cambiarFicha(int origen, int destino) {
 		
-		casillas[origen] = false;
-		casillas[destino] = true;
+		casillas[origen] = 0;
+		casillas[destino] = 20;
 		
 	}
 	
@@ -46,7 +46,7 @@ public class Tablero {
 		
 	}
 	
-	public boolean[] consultarCasillas() {
+	public int[] consultarCasillas() {
 		
 		return casillas;
 		
